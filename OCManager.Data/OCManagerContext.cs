@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
+using OCManager.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
+
+namespace OCManager.Data
+{
+    public class OCManagerContext : DbContext
+    {
+        public OCManagerContext()
+            : base("OCManagerConnection")
+        {
+        }
+
+        public DbSet<EventTask> ETask { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
+    }
+}

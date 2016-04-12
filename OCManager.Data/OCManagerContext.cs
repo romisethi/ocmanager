@@ -16,12 +16,12 @@ namespace OCManager.Data
         {
         }
 
-        public DbSet<EventTask> ETask { get; set; }
+        public virtual DbSet<EventTask> EventTasks { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Entity<EventTask>().ToTable("tblEvent");
         }
     }
 }

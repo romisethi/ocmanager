@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataServices\TestData.cs" />
+    <Compile Include="Entities\EventTask.cs" />
     <Compile Include="OCManagerContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,10 +62,6 @@
     <ProjectReference Include="..\OCManager.API\OCManager.API.csproj">
       <Project>{29fe251f-608d-410d-8b7c-36b8cb57c9e0}</Project>
       <Name>OCManager.API</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OCManager\OCManager.csproj">
-      <Project>{b2a1ba4e-8977-4190-a153-1d7bccb4f3b1}</Project>
-      <Name>OCManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

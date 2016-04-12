@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OCManager.Business;
 
 namespace OCManager.Controllers
 {
@@ -10,12 +11,15 @@ namespace OCManager.Controllers
     {
         public ActionResult Index()
         {
+            TestBusiness tobj = new TestBusiness();
+            tobj.InitializeDB();
             return View();
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+
 
             return View();
         }

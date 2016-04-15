@@ -16,15 +16,15 @@ namespace OCManager.Entities.DBEntities
         public Int32 ID { get; set; }
 
         [Column(Storage = "event_id", CanBeNull = false)]
-        public int EventID { get; set; }
+        public int Event_ID { get; set; }
 
 
         [Column(Storage = "start", CanBeNull = false)]
-        public DateTime StartTime { get; set; }
+        public DateTime Start { get; set; }
 
 
         [Column(Storage = "end", CanBeNull = false)]
-        public DateTime EndTime { get; set; }
+        public DateTime End { get; set; }
 
 
         [Column(Storage = "notes", CanBeNull = false)]
@@ -32,19 +32,19 @@ namespace OCManager.Entities.DBEntities
 
 
         [Column(Storage = "location_id", CanBeNull = false)]
-        public int LocationID { get; set; }
+        public int Location_ID { get; set; }
 
         [Column(Storage = "user_id", CanBeNull = true)]
-        public int UserID { get; set; }
+        public int User_ID { get; set; }
 
         [Column(Storage = "last_change_id", CanBeNull = true)]
-        public int LastChangeID { get; set; }
+        public int Last_Change_ID { get; set; }
 
         [Column(Storage = "external_id", CanBeNull = true)]
-        public int ExternalID { get; set; }
+        public Nullable<Int32> External_ID { get; set; }
 
         [Column(Storage = "reason_code", CanBeNull = false)]
-        public int ReasonCode { get; set; }
+        public int Reason_Code { get; set; }
 
         [Column(Storage = "timestamp", CanBeNull = false)]
         public DateTime TimeStamp { get; set; }
@@ -53,6 +53,6 @@ namespace OCManager.Entities.DBEntities
         public Int16 WalkIn { get; set; }
 
         [Column(Storage = "group_appointment", CanBeNull = false)]
-        public Int16 GroupAppointment { get; set; }
+        public Int16 Group_Appointment { get; set; }
     }
 }

@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +53,7 @@
   <ItemGroup>
     <Compile Include="DataServices\TestData.cs" />
     <Compile Include="Entities\EventTask.cs" />
+    <Compile Include="Entities\Occurence.cs" />
     <Compile Include="OCManagerContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +66,9 @@
       <Project>{29fe251f-608d-410d-8b7c-36b8cb57c9e0}</Project>
       <Name>OCManager.API</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

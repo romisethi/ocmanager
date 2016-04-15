@@ -22,6 +22,8 @@ namespace OCManager.Data
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<EventTask>().ToTable("tblEvent");
+            modelBuilder.Entity<EventTask>().ToTable("occurences");
+            
         }
     }
 }

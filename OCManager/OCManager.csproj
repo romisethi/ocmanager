@@ -35,6 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -78,6 +79,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc">
+      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -126,6 +136,9 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -199,6 +212,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -293,6 +307,18 @@
     <ProjectReference Include="..\OCManager.Business\OCManager.Business.csproj">
       <Project>{2a71087c-9c17-4385-9eee-7721f9950e69}</Project>
       <Name>OCManager.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Data\OCManager.Data.csproj">
+      <Project>{4ead62de-fd13-45dc-9925-5948cdb30dd4}</Project>
+      <Name>OCManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Entities\OCManager.Entities.csproj">
+      <Project>{46d2c5db-b644-4744-a71b-9ba219f28c52}</Project>
+      <Name>OCManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Interface\OCManager.Interface.csproj">
+      <Project>{75bf19c6-3fa9-4b26-93a1-876b56936446}</Project>
+      <Name>OCManager.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

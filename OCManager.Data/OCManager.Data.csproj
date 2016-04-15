@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,9 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataServices\OccurenceDataService.cs" />
     <Compile Include="DataServices\TestData.cs" />
     <Compile Include="Entities\EventTask.cs" />
-    <Compile Include="Entities\Occurence.cs" />
+    <Compile Include="EntityFrameworkService.cs" />
     <Compile Include="OCManagerContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +67,14 @@
     <ProjectReference Include="..\OCManager.API\OCManager.API.csproj">
       <Project>{29fe251f-608d-410d-8b7c-36b8cb57c9e0}</Project>
       <Name>OCManager.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Entities\OCManager.Entities.csproj">
+      <Project>{46d2c5db-b644-4744-a71b-9ba219f28c52}</Project>
+      <Name>OCManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Interface\OCManager.Interface.csproj">
+      <Project>{75bf19c6-3fa9-4b26-93a1-876b56936446}</Project>
+      <Name>OCManager.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

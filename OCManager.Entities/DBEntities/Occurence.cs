@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 
-namespace OCManager.Data.Entities
+namespace OCManager.Entities.DBEntities
 {
 
     [Table(Name = "Collaborate")]

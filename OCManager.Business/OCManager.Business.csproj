@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OccurenceBusinessService.cs" />
     <Compile Include="TestBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -48,6 +50,14 @@
     <ProjectReference Include="..\OCManager.Data\OCManager.Data.csproj">
       <Project>{4ead62de-fd13-45dc-9925-5948cdb30dd4}</Project>
       <Name>OCManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Entities\OCManager.Entities.csproj">
+      <Project>{46d2c5db-b644-4744-a71b-9ba219f28c52}</Project>
+      <Name>OCManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCManager.Interface\OCManager.Interface.csproj">
+      <Project>{75bf19c6-3fa9-4b26-93a1-876b56936446}</Project>
+      <Name>OCManager.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

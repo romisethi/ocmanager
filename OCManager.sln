@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 14 for Web
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCManager", "OCManager\OCManager.csproj", "{B2A1BA4E-8977-4190-A153-1D7BCCB4F3B1}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCManager.Common", "OCManager.Common\OCManager.Common.csproj", "{8F015848-F95D-4A8B-995F-05E80ABBE176}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCManager.Interface", "OCManager.Interface\OCManager.Interface.csproj", "{75BF19C6-3FA9-4B26-93A1-876B56936446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCManager.Entities", "OCManager.Entities\OCManager.Entities.csproj", "{46D2C5DB-B644-4744-A71B-9BA219F28C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{75BF19C6-3FA9-4B26-93A1-876B56936446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75BF19C6-3FA9-4B26-93A1-876B56936446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75BF19C6-3FA9-4B26-93A1-876B56936446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D2C5DB-B644-4744-A71B-9BA219F28C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D2C5DB-B644-4744-A71B-9BA219F28C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D2C5DB-B644-4744-A71B-9BA219F28C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D2C5DB-B644-4744-A71B-9BA219F28C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

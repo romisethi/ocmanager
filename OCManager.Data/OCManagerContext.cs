@@ -16,13 +16,14 @@ namespace OCManager.Data
         {
         }
 
-        public virtual DbSet<EventTask> EventTasks { get; set; }
+        //public virtual DbSet<EventTask> EventTasks { get; set; }
+        public virtual DbSet<OCManager.Entities.DBEntities.Occurence> Occurences { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<EventTask>().ToTable("tblEvent");
-            modelBuilder.Entity<EventTask>().ToTable("occurences");
+            //modelBuilder.Entity<EventTask>().ToTable("tblEvent");
+            modelBuilder.Entity<OCManager.Entities.DBEntities.Occurence>().ToTable("occurences");
             
         }
     }

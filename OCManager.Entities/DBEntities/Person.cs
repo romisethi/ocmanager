@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Linq.Mapping;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace OCManager.Entities.DBEntities
     [Table(Name="Person")]
     public class Person
     {
+        [Key]
         [Column(Storage = "person_id", CanBeNull = false)]
         public Int32 Person_ID { get; set; }
 
@@ -64,6 +66,6 @@ namespace OCManager.Entities.DBEntities
         [Column(Storage = "marital_status", CanBeNull = false)]
         public string Marital_Status { get; set; }
         [Column(Storage = "ts", CanBeNull = false)]
-        public DateTime Marital_Status { get; set; }
+        public DateTime TS { get; set; }
     }
 }

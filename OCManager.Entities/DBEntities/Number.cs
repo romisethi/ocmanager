@@ -4,11 +4,13 @@ using System.Data.Linq.Mapping;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace OCManager.Entities.DBEntities
 {
     public class Number
     {
+        [Key]
         [Column(Storage = "number_id", CanBeNull = false)]
         public Int32 Number_Id { get; set; }
 
@@ -19,7 +21,7 @@ namespace OCManager.Entities.DBEntities
         public string Notes { get; set; }
 
         [Column(Storage = "number", CanBeNull = false)]
-        public string Number { get; set; }
+        public string Num { get; set; }
 
 
         [Column(Storage = "active", CanBeNull = false)]

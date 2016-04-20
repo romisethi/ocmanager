@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Linq.Mapping;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace OCManager.Entities.DBEntities
     [Table(Name="Patient")]
     public class Patient
     {
+        [Key]
         [Column(Storage = "person_id", CanBeNull = false)]
         public Int32 Person_ID { get; set; }
 

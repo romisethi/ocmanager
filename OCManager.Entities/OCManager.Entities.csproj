@@ -42,8 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DBEntities\dsadsa.cs" />
+    <Compile Include="DBEntities\Number.cs" />
+    <Compile Include="DBEntities\Patient.cs" />
+    <Compile Include="DBEntities\Person.cs" />
     <Compile Include="DBEntities\Occurence.cs" />
+    <Compile Include="DBEntities\PersonNumber.cs" />
+    <Compile Include="DBEntities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

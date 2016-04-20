@@ -9,7 +9,7 @@ using System.Data.Linq.Mapping;
 namespace OCManager.Entities.DBEntities
 {
 
-    [Table(Name = "Collaborate")]
+    [Table(Name = "Occurences")]
     public class Occurence
     {
         [Column(Storage = "id", CanBeNull = false)]

@@ -16,9 +16,7 @@ namespace OCManager.Controllers
         // GET: /OccurenceManager/
         public ActionResult Index()
         {
-           
-            var res = _occurenceBusinessService.GetOccurencesList();
-
+            var occurence = _occurenceBusinessService.GetOccurencesList();
             return View();
         }
 	}
